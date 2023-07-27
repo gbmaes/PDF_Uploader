@@ -1,0 +1,16 @@
+<mvc:View controllerName="com.ui5.PDF_Uploader.controller.main" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:u="sap.ui.unified"
+  xmlns:pdf="ui5lab.wl.pdf"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App id="idAppControl">
+    <pages>
+      <Page title="{i18n>title}">
+        <content>         
+          <u:FileUploader name="myFileUpload" change="handleFileChange" tooltip="Upload your file to the local server" mimeType="application/pdf" />
+           <pdf:PdfViewer id="pdfViewer" height="100%"  visible="false"/>
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>
